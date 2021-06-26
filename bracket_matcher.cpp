@@ -12,8 +12,7 @@ int bracket_matcher(std::string str) {
 
   }
 
-  if ((opening_br == 0 && closing_br == 0)
-    || opening_br == closing_br) { return 1; }
+  if (opening_br == closing_br) { return 1; }
 
   return 0; 
 
